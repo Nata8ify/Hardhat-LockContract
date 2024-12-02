@@ -6,7 +6,7 @@ module.exports = {
   networks: {
     besuWallet: {
       url: vars.get("LOCK_CONTRACT_TESTPJ_NODE_ENDPOINT"),
-      chainId: vars.get("LOCK_CONTRACT_TESTPJ_CHAIN_ID"),
+      chainId: parseInt(vars.get("LOCK_CONTRACT_TESTPJ_CHAIN_ID")),
       // test accounts only, all good ;)
       accounts: [
         vars.get("LOCK_CONTRACT_TESTPJ_OWNER_CONTRACT_PK")
