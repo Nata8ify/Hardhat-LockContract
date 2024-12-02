@@ -9,7 +9,7 @@ module.exports = {
     //     chainId: 1337
     // },
     besuWallet: {
-      url: vars.get("LOCK_CONTRACT_TESTPJ_NODE_ENDPOINT"),
+      url: "http://172.18.0.1:8545",
       chainId: 23354,
       // test accounts only, all good ;)
       accounts: [
