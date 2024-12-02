@@ -10,7 +10,7 @@ module.exports = {
     // },
     besuWallet: {
       url: vars.get("LOCK_CONTRACT_TESTPJ_NODE_ENDPOINT"),
-      chainId: (vars.has("LOCK_CONTRACT_TESTPJ_CHAIN_ID") ? vars.get("LOCK_CONTRACT_TESTPJ_CHAIN_ID") : 1337),
+      chainId: 23354,
       // test accounts only, all good ;)
       accounts: [
         vars.get("LOCK_CONTRACT_TESTPJ_OWNER_CONTRACT_PK")
