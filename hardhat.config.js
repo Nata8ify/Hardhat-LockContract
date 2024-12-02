@@ -4,13 +4,9 @@ require("@nomicfoundation/hardhat-toolbox");
 module.exports = {
   solidity: "0.8.27",
   networks: {
-    // in built test network to use when developing contracts
-    // hardhat: {
-    //     chainId: 1337
-    // },
     besuWallet: {
       url: vars.get("LOCK_CONTRACT_TESTPJ_NODE_ENDPOINT"),
-      chainId: 23354,
+      chainId: (vars.has("LOCK_CONTRACT_TESTPJ_CHAIN_ID") ? vars.get("LOCK_CONTRACT_TESTPJ_CHAIN_ID") : 1337),
       // test accounts only, all good ;)
       accounts: [
         vars.get("LOCK_CONTRACT_TESTPJ_OWNER_CONTRACT_PK")
