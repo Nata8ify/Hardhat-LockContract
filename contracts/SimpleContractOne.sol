@@ -6,9 +6,11 @@ pragma solidity ^0.8.27;
 
 contract SimpleContractOne {
 
+    string helloWorld = "Hello World!";
+
     constructor() payable {}
 
     function print() public view returns (string memory) {
-        return "Hello World!";
+        return helloWorld;
     }
 }
